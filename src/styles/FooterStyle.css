@@ -1,0 +1,70 @@
+.f-wrapper {
+  color: white;
+  background: var(--black);
+}
+
+.f-container {
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: var(--secondary-color);
+}
+
+.f-left {
+  gap: 0.5rem;
+}
+
+.f-logo-text {
+  font-size: 1.9rem;
+  font-weight: 600;
+  color: white;
+}
+
+.f-right {
+  gap: 0.5rem;
+}
+
+.f-menu {
+  gap: 2rem;
+}
+
+.f-menu>*:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .f-container {
+    justify-content: center;
+  }
+  .f-container>div {
+    align-items: center !important;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .f-logo-text {
+    font-size: 1.5rem;
+  }
+  .f-right {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .secondaryText {
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  .primaryText {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .f-menu {
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .f-menu>* {
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+}

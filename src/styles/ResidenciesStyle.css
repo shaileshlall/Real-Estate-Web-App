@@ -1,0 +1,178 @@
+/* Properties CSS */
+
+/* Properties Section 1 */
+
+.page-inner {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: var(--black);
+  min-height: 400px;
+  color: white;
+}
+
+.links {
+  gap: 1rem;
+  font-size: 0.9rem;
+}
+
+.links > *:hover {
+  text-decoration: underline !important;
+  color: #00b894 !important;
+}
+
+/* Properties Section 2 */
+
+.Properties_section2 {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--light-grey);
+}
+
+.Properties_section2 h2 {
+  font-size: 3rem;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.Properties_section2 p {
+  font-size: 1.125rem;
+}
+
+.Properties_section2 .section_title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--yellow);
+}
+
+.order_now {
+  background: #00B98E;
+  color: #fff !important;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  transition: all 300ms ease-in;
+}
+
+.order_now:hover {
+  background-color: #01cf9f;
+}
+
+/* Hero Image Slider Styling */
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider-wrapper {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+}
+
+.slider-image {
+  min-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+/* Existing styles below remain same */
+.custom-nav-buttons {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 10;
+}
+
+.circle-btn {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #00b894;
+  color: white;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.circle-btn:hover {
+  background-color: #0a0252;
+}
+
+
+@media (max-width: 768px) {
+  .Properties_section2 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+  .Properties_section2 h2 {
+    font-size: 1.5rem;
+  }
+
+  .Properties_section2 p {
+    font-size: 0.9rem;
+  }
+
+  .order_now {
+    font-size: 0.8rem;
+  }
+
+  .slider-image {
+    min-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    flex-shrink: 0;
+    margin-top: 2rem;
+  }
+
+  .custom-nav-buttons {
+    position: absolute;
+    top: 85%;
+    /* left: 100px; */
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    z-index: 10;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .circle-btn {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #00b894;
+    color: white;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+
+  .circle-btn:hover {
+    background-color: #0a0252;
+  }
+}
+
+/* Properties Section 3 */
